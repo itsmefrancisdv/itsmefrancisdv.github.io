@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <link rel="stylesheet" href="styles.css">
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <title>My Resume</title>
+    </head>
+
+    <body>
+        <div class="profile">
+            <div class="picdata">
+                <div class="picuser"></div>
+            </div>
+            <div class="name">Francis De Vera<br></div>
+            <div class="links">
+                <a href ="https://twitter.com/francisdeveraa">
+                    <img src="twitter.png" width="45%" height="50%" style="vertical-align:middle;margin:30% 30%">
+                </a>
+                <a href ="https://www.linkedin.com/in/francis-de-vera-b896841b2/">
+                    <img src="linkedin.png" width="45%" height="50%" style="vertical-align:middle;margin:30% 30%">
+                </a>
+                <a href ="https://github.com/Fuzzy-Wuzzzy">
+                    <img src="github.png" width="45%" height="50%" style="vertical-align:middle;margin:30% 25%">
+                </a>
+
+            </div>
+        </div>
+
+        <a href="#follow">
+            <div class="up">↑</div>
+        </a>
+
+        <div class="container2">
+            <a name="follow"></a>
+            <div class="educationlbl">Education
+                <button type="button" id = "education_btn">+</button>
+            </div>
+            <div class="education"></div>
+            <form id="add_educations">
+                <input type="text" name="title" placeholder="Title"><br>
+                <input type="text" name="school" placeholder="School"><br>
+                <input type="text" name="year_start" placeholder="Year started"><br>
+                <input type="text" name="year_end" placeholder="Year ended">
+                <button>Submit</button>
+            </form>
+        </div>
+
+        <div class="container3">
+            <div class="organizationslbl">Organizations
+                <button type="button" id = "organization_btn">+</button>
+            </div>
+            <div class="organization"></div>
+            <form id="add_organizations">
+                <input type="text" name="name" placeholder="Name"><br>
+                <input type="text" name="position" placeholder="Position"><br>
+                <input type="text" name="year_start" placeholder="Year started"><br>
+                <input type="text" name="year_end" placeholder="Year ended">
+                <button>Submit</button>
+            </form>
+        </div>
+
+        <div class="container4">
+            <div class="workslbl">Works
+                <button type="button" id = "work_btn">+</button>
+            </div>
+            <div class="work"></div>
+            <form id="add_works">
+                <input type="text" name="name" placeholder="Name"><br>
+                <input type="text" name="subject" placeholder="Subject"><br>
+                <input type="text" name="year_start" placeholder="Year started"><br>
+                <input type="text" name="year_end" placeholder="Year ended">
+                <button>Submit</button>
+            </form>
+        </div>
+
+        <div class="container1">
+            <div class="aboutmelbl">About me
+                <button type="button" id="other_btn">Edit</button></div>
+            <div class="other"></div>
+            <div class="other2">
+                <div class="otherlinks">
+                    <button type ="button" id="twitter_btn">Edit</button>
+                    <button type ="button" id="linkedin_btn">Edit</button>
+                    <button type ="button" id="github_btn">Edit</button>
+                </div>
+                
+            </div>
+            <form id="edit_intro">
+                <input type="text" name="introd" placeholder="Edit text">
+                <button>Submit</button>
+            </form>
+            <form id="edit_twitter_link">
+                <input type="text" name="twitter" placeholder="Enter new link">
+                <button>Submit</button>
+            </form>
+            <form id="edit_linkedin_link">
+                <input type="text" name="linkedin" placeholder="Enter new link">
+                <button>Submit</button>
+            </form>
+            <form id="edit_github_link">
+                <input type="text" name="github" placeholder="Enter new link">
+                <button>Submit</button>
+            </form>
+        </div>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.17.1/firebase-firestore.js"></script>
+        <!-- <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script> -->
+
+        <!-- <script src="firebase.js"></script> -->
+        <script src="js2.js"></script>
+    </body>
+</html>
